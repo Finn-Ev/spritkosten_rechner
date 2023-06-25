@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
                 builder: (_) => const InfoScreen(),
               ),
             ),
-            style: TextButton.styleFrom(primary: Colors.white),
+            style: TextButton.styleFrom(foregroundColor: Colors.white),
             child: const Icon(
               Icons.info_outline,
               size: 32,
@@ -27,10 +27,10 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const [
+          children: [
             Card(
               margin: EdgeInsets.fromLTRB(12, 12, 12, 0),
               child: Padding(

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: primarySwatch,
         textTheme: const TextTheme(
-          button: TextStyle(color: Colors.white),
+          labelLarge: TextStyle(color: Colors.white),
         ),
       ),
       color: Colors.white,

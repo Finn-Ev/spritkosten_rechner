@@ -25,9 +25,9 @@ class InfoScreen extends StatelessWidget {
           const SizedBox(
             height: 14,
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Flexible(
                 child: SelectableText(
                   'Icons made by: \nKiranshastry \n(https://www.flaticon.com/authors/kiranshastry)',
@@ -37,9 +37,9 @@ class InfoScreen extends StatelessWidget {
               ),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Flexible(
                 child: SelectableText(
                   '\nfrom flaticon (https://www.flaticon.com)',

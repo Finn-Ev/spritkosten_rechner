@@ -17,9 +17,8 @@ class Result extends StatelessWidget {
       ? '${formatCurrency.format(fuelCostsPerPerson)} pro Person'
       : formatCurrency.format(fuelCosts);
 
-  String get secondaryText => fuelCostsPerPerson != fuelCosts
-      ? '(${formatCurrency.format(fuelCosts)} gesamt)'
-      : '';
+  String get secondaryText =>
+      fuelCostsPerPerson != fuelCosts ? '(${formatCurrency.format(fuelCosts)} gesamt)' : '';
 
   @override
   Widget build(BuildContext context) {

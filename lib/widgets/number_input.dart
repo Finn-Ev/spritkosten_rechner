@@ -28,16 +28,14 @@ class NumberInput extends StatelessWidget {
           isInt ? RegExp(r'[0-9]') : RegExp(r'[0-9]+[.,]?[0-9]*'),
         ),
       ],
-      validator: (value) =>
-          value!.isEmpty && !canBeNull ? "Bitte Wert eingeben" : null,
+      validator: (value) => value!.isEmpty && !canBeNull ? "Bitte Wert eingeben" : null,
       decoration: InputDecoration(
         border: const OutlineInputBorder(),
         labelText: labelText,
       ),
       keyboardType: const TextInputType.numberWithOptions(decimal: true),
       onChanged: onChanged,
-      textInputAction:
-          isLastField ? TextInputAction.done : TextInputAction.next,
+      textInputAction: isLastField ? TextInputAction.done : TextInputAction.next,
       // onEditingComplete:   widget.isLastField ? onEditingComplete : (){},
     );
   }
